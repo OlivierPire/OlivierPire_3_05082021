@@ -5,7 +5,7 @@
 		<title></title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" type="text/css" href="menu_1.css">
+		<link rel="stylesheet" type="text/css" href="Sass/Pages/menu_1.css">
         <script src="https://kit.fontawesome.com/976e89b6e5.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,125 +15,131 @@
 
     <body>
 
+        <div id="loading">
+            
+        </div>
+
         <!-- Header -->
 
         <header>
             <div>
-                <i class="fas fa-arrow-left back"></i>
-                <img src="images/logo/ohmyfood@2x.svg">
-                <img src="images/restaurants/palette_du_gout.jpg">
+                <a href="../"><i class="fas fa-arrow-left back"></i></a>
+                <img src="images/logo/ohmyfood@2x.svg" id="logo">
             </div>
+            <img src="images/restaurants/palette_du_gout.jpg" id="header_img">
         </header>
 
        <!-- Section "Carte du restaurant" -->
 
         <section>
-            <h1>La palette du goût<i class="far fa-heart"></i><i class="fas fa-heart"></i></h1>
-            <h2>Entrées</h2>
+            <div id="section_container">
+                <div class="section_title">
+                    <h1>La palette du goût</h1>
+                    <i class="far fa-heart empty"></i>
+                    <i class="fas fa-heart full"></i>
+                </div>
+                <h2>Entrées</h2>
 
-            <div class="plats_liste">
-                <div class="plat">
-                    <p>Fricassée d'escargot</p>
-                    <div class="description_prix">
-                        <p>Au piment d'Espelette</p>
-                        <p>25€</p>
+                <div class ="plats">
+
+                    <a href="#" class="plats_bloc">
+                        <p>Fricassée d'escargot</p>
+                        <div class="plats_description">
+                            <span>Au piment d'Espelette</span>
+                            <span class="prix">25€</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="plats_bloc">
+                        <p>Foie gras de canard mi-cuit</p>
+                        <div class="plats_description">
+                            <span>Et ses copeaux de truffe noire</span>
+                            <span class="prix">35€</span>
+                        </div>
+                    </a>
+                
+                    <a href="#" class="plats_bloc">
+                        <p>Oeuf au plat</p>
+                        <div class="plats_description">
+                            <span>Assaisonné à la truffe sur lit de caviar</span>
+                            <span class="prix">20€</span>
+                        </div>
+                    </a>
+
+                </div>  
+                
+                <h2>Plats</h2>
+
+                <div class="plats_liste">
+                    <div class="plat">
+                        <p>Filet de boeuf aux herbes</p>
+                        <div class="description_prix">
+                            <p>Accompagné de sa ribambelle de légumes</p>
+                            <p>40€</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="plats_liste">
-                <div class="plat">
-                    <p>Foie gras de canard mi-cuit</p>
-                    <div class="description_prix">
-                        <p>Et ses copeaux de truffe noire</p>
-                        <p>35€</p>
+                <div class="plats_liste">
+                    <div class="plat">
+                        <p>Parmentier de queue de boeuf</p>
+                        <div class="description_prix">
+                            <p>À la truffe noire sur sa purée de panais</p>
+                            <p>35€</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="plats_liste">
-                <div class="plat">
-                    <p>Oeuf au plat</p>
-                    <div class="description_prix">
-                        <p>Assaisonné à la truffe sur lit de caviar</p>
-                        <p>20€</p>
+                <div class="plats_liste">
+                    <div class="plat">
+                        <p>Filet de turbot</p>
+                        <div class="description_prix">
+                            <p>Aux agrumes</p>
+                            <p>44€</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <h2>Plats</h2>
 
-            <div class="plats_liste">
-                <div class="plat">
-                    <p>Filet de boeuf aux herbes</p>
-                    <div class="description_prix">
-                        <p>Accompagné de sa ribambelle de légumes</p>
-                        <p>40€</p>
+                <h2>Desserts</h2>
+
+                <div class="plats_liste">
+                    <div class="plat">
+                        <p>Paris-Brest</p>
+                        <div class="description_prix">
+                            <p>Revisité</p>
+                            <p>18€</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="plats_liste">
-                <div class="plat">
-                    <p>Parmentier de queue de boeuf</p>
-                    <div class="description_prix">
-                        <p>À la truffe noire sur sa purée de panais</p>
-                        <p>35€</p>
+                <div class="plats_liste">
+                    <div class="plat">
+                        <p>Macaron au chocolat d'exception </p>
+                        <div class="description_prix">
+                            <p>Et glace à la vanille de Madagascar</p>
+                            <p>22€</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="plats_liste">
-                <div class="plat">
-                    <p>Filet de turbot</p>
-                    <div class="description_prix">
-                        <p>Aux agrumes</p>
-                        <p>44€</p>
+                <div class="plats_liste">
+                    <div class="plat">
+                        <p>Mousse au chocolat </p>
+                        <div class="description_prix">
+                            <p>Au piment d'Espelette et à la truffe noire</p>
+                            <p>23€</p>
+                        </div>
                     </div>
                 </div>
+
+                <button>Commander</button>
             </div>
-
-            <h2>Desserts</h2>
-
-            <div class="plats_liste">
-                <div class="plat">
-                    <p>Paris-Brest</p>
-                    <div class="description_prix">
-                        <p>Revisité</p>
-                        <p>18€</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="plats_liste">
-                <div class="plat">
-                    <p>Macaron au chocolat d'exception </p>
-                    <div class="description_prix">
-                        <p>Et glace à la vanille de Madagascar</p>
-                        <p>22€</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="plats_liste">
-                <div class="plat">
-                    <p>Mousse au chocolat </p>
-                    <div class="description_prix">
-                        <p>Au piment d'Espelette et à la truffe noire</p>
-                        <p>23€</p>
-                    </div>
-                </div>
-            </div>
-
-            <button>Commander</button>
         </section>
 
         <!-- Footer -->
 
         <footer>
-            <div id="logo_footer">
-                <img src="images/logo/ohmyfood@2x.svg">
-                </div>
+            <h3>ohmyfood</h3>
 
                 <ul>
                     <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>

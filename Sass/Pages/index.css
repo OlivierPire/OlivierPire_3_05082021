@@ -1,0 +1,503 @@
+body, html {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+body a:link, html a:link {
+  text-decoration: none;
+  color: none;
+}
+
+body a:visited, html a:visited {
+  color: black;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+#blockpage {
+  -webkit-animation: flou 8s;
+          animation: flou 8s;
+}
+
+#loading {
+  z-index: 1;
+  position: fixed;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation: loading 5s;
+          animation: loading 5s;
+  visibility: hidden;
+  background-color: black;
+}
+
+#loading_utensils {
+  font-size: 3em;
+  -webkit-animation: utensils 5s;
+          animation: utensils 5s;
+}
+
+#loading_text {
+  margin-left: 30px;
+  font-size: 2.5em;
+  -webkit-animation: loading-text 4s;
+          animation: loading-text 4s;
+  visibility: hidden;
+}
+
+@-webkit-keyframes flou {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flou {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes utensils {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    color: #9356DC;
+  }
+  70% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  80% {
+    -webkit-transform: translateX(140px);
+            transform: translateX(140px);
+  }
+  100% {
+    color: #FF79DA;
+    -webkit-transform: translateX(140px) scale(5);
+            transform: translateX(140px) scale(5);
+  }
+}
+
+@keyframes utensils {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    color: #9356DC;
+  }
+  70% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  80% {
+    -webkit-transform: translateX(140px);
+            transform: translateX(140px);
+  }
+  100% {
+    color: #FF79DA;
+    -webkit-transform: translateX(140px) scale(5);
+            transform: translateX(140px) scale(5);
+  }
+}
+
+@-webkit-keyframes loading-text {
+  0% {
+    visibility: visible;
+    color: #FF79DA;
+  }
+  100% {
+    color: #9356DC;
+    -webkit-transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+@keyframes loading-text {
+  0% {
+    visibility: visible;
+    color: #FF79DA;
+  }
+  100% {
+    color: #9356DC;
+    -webkit-transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+@-webkit-keyframes loading {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes loading {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+#header_img {
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+#header_position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  background: #e9ebeb;
+  width: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: inset 0 6px 6px -6px #a3a2a2;
+          box-shadow: inset 0 6px 6px -6px #a3a2a2;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #353434;
+}
+
+#header .header_icon {
+  margin-right: 20px;
+}
+
+#header_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: whitesmoke;
+  padding-bottom: 50px;
+}
+
+#header_title h1 {
+  font-size: 1.5em;
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-top: 50px;
+}
+
+#header_title h2 {
+  font-size: 1em;
+  font-weight: lighter;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+#header_title button {
+  background: #FF79DA;
+  -webkit-box-shadow: inset 0 -18px 25px -2px #9356DC, 1px 2px 3px 1px #a3a2a2;
+          box-shadow: inset 0 -18px 25px -2px #9356DC, 1px 2px 3px 1px #a3a2a2;
+  border-radius: 25px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-right: 25px;
+  padding-left: 25px;
+  color: white;
+  border: none;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+#header_title button:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-box-shadow: inset 0 -18px 25px -2px #9356DC, 1px 2px 2px 3px #a3a2a2;
+          box-shadow: inset 0 -18px 25px -2px #9356DC, 1px 2px 2px 3px #a3a2a2;
+}
+
+#fonctionnement h3 {
+  font-size: 1.5em;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+#fonctionnement_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 25px;
+}
+
+#fonctionnement i {
+  display: inline-block;
+  padding-right: 35px;
+  color: #a3a2a2;
+  padding-left: 30px;
+}
+
+#fonctionnement span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100%;
+  background-color: #9356DC;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  color: white;
+}
+
+#fonctionnement li {
+  position: relative;
+  width: 80%;
+  margin: 0 auto 30px auto;
+  background-color: #eef0f0;
+  -webkit-box-shadow: 2px 4px 12px 0px #a3a2a2;
+          box-shadow: 2px 4px 12px 0px #a3a2a2;
+  border-radius: 20px;
+  padding: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: left;
+  font-weight: bold;
+}
+
+#fonctionnement li:hover {
+  background: #9256dc31;
+}
+
+#fonctionnement li:hover:hover i {
+  color: #9356DC;
+}
+
+#fonctionnement li .fa-mobile-alt {
+  font-size: 1.27em;
+  padding-right: 38px;
+}
+
+#restaurants {
+  background: #eef0f0;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#restaurants h3 {
+  margin-top: 0;
+  padding-top: 50px;
+}
+
+#restaurants_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  height: 1150px;
+  padding-bottom: 50px;
+}
+
+#restaurants .restaurants_carte {
+  position: relative;
+  background: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+#restaurants .restaurants_carte:hover {
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+#restaurants .restaurants_carte .restaurants_description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+#restaurants .restaurants_carte .restaurants_description .empty {
+  position: relative;
+  right: 30px;
+  font-size: 1.5em;
+}
+
+#restaurants .restaurants_carte .restaurants_description .full {
+  position: absolute;
+  right: 30px;
+  color: black;
+  color: transparent;
+  font-size: 1.5em;
+}
+
+#restaurants .restaurants_carte .restaurants_description .full:hover {
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
+  color: #9356DC;
+}
+
+#restaurants .restaurants_carte .restaurants_description h4 {
+  margin-bottom: 0;
+}
+
+#restaurants .restaurants_carte .restaurants_description p {
+  margin-top: 10px;
+}
+
+#restaurants .restaurants_carte img {
+  height: 180px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+#restaurants .restaurants_carte .nouveau {
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 0.8em;
+  padding: 5px 10px 5px 10px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background: #99E2D0;
+  color: #128a6c;
+}
+
+footer {
+  background: #3b3b3b;
+  height: 100%;
+}
+
+footer h4 {
+  font-family: 'shrikhand';
+  color: white;
+  font-size: 1.5em;
+  font-weight: lighter;
+  margin-left: 30px;
+  padding-top: 30px;
+  margin-top: 0;
+}
+
+footer ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  padding-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 145px;
+}
+
+footer ul li {
+  margin-left: 30px;
+  list-style-type: none;
+}
+
+footer ul li a:visited {
+  color: white;
+}
+
+footer ul li i {
+  width: 5px;
+  margin-right: 20px;
+  color: white;
+}
+
+footer ul li a {
+  color: white;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=index.css.map */

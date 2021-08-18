@@ -1,0 +1,149 @@
+body, html {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+body a:link, html a:link {
+  text-decoration: none;
+  color: none;
+}
+
+body a:visited, html a:visited {
+  color: black;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h3 {
+  font-family: 'shrikhand', sans-serif;
+  font-weight: lighter;
+}
+
+header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin: 15px;
+}
+
+header div i {
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  font-size: 1.5em;
+}
+
+header #header_img {
+  height: 300px;
+  width: 100%;
+  z-index: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+
+#section_container {
+  z-index: 1;
+  position: relative;
+  margin-top: -40px;
+  border-radius: 30px 30px 0px 0px;
+  background-color: #e9ebeb;
+}
+
+#section_container .section_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+#section_container .section_title h1 {
+  margin-left: 15px;
+  margin-top: 0;
+  padding-top: 25px;
+  font-size: 1.8em;
+}
+
+#section_container .section_title .empty {
+  position: relative;
+  right: 10px;
+  font-size: 1.5em;
+}
+
+#section_container .section_title .full {
+  position: absolute;
+  right: 10px;
+  font-size: 1.5em;
+  color: transparent;
+}
+
+#section_container .section_title .full:hover {
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
+  color: #9356DC;
+}
+
+#section_container h2 {
+  margin-top: 0;
+  margin-left: 15px;
+  border-bottom: 1px solid green;
+}
+
+#section_container .plats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 300px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#section_container .plats_bloc {
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+#section_container .plats_bloc p {
+  margin: 0;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#section_container .plats_bloc .prix {
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+#section_container .plats_description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=menu_1.css.map */
