@@ -15,10 +15,6 @@
 
     <body>
 
-        <div id="loading">
-            
-        </div>
-
         <!-- Header -->
 
         <header>
@@ -35,111 +31,122 @@
             <div id="section_container">
                 <div class="section_title">
                     <h1>La palette du goût</h1>
-                    <i class="far fa-heart empty"></i>
-                    <i class="fas fa-heart full"></i>
+                    <div class="heart">
+                        <i class="far fa-heart empty"></i>
+                        <i class="fas fa-heart full"></i>
+                    </div>
                 </div>
-                <h2>Entrées</h2>
+                
+                <h2>ENTRÉES</h2>
 
-                <div class ="plats">
+                <div class ="entrees">
 
-                    <a href="#" class="plats_bloc">
-                        <p>Fricassée d'escargot</p>
-                        <div class="plats_description">
+                    <a href="#" class="entrees_bloc">
+                        <div class="entrees_title">
+                            <h3>Fricassée d'escargot</h3>
+                        </div>
+                        <div class="entrees_description">
                             <span>Au piment d'Espelette</span>
                             <span class="prix">25€</span>
                         </div>
+                        
+                        <div id="check_animation">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        
                     </a>
 
-                    <a href="#" class="plats_bloc">
+                    <a href="#" class="entrees_bloc">
                         <p>Foie gras de canard mi-cuit</p>
-                        <div class="plats_description">
+                        <div class="entrees_description">
                             <span>Et ses copeaux de truffe noire</span>
                             <span class="prix">35€</span>
                         </div>
                     </a>
                 
-                    <a href="#" class="plats_bloc">
+                    <a href="#" class="entrees_bloc">
                         <p>Oeuf au plat</p>
-                        <div class="plats_description">
+                        <div class="entrees_description">
                             <span>Assaisonné à la truffe sur lit de caviar</span>
                             <span class="prix">20€</span>
+                        </div>
+
+                        <div class="check_circle">
+                            <i class="fas fa-check-circle"></i>
                         </div>
                     </a>
 
                 </div>  
                 
-                <h2>Plats</h2>
+                <h2>PLATS</h2>
 
-                <div class="plats_liste">
-                    <div class="plat">
+                <div class="plats">
+
+                    <a href="#" class="plats_bloc">
                         <p>Filet de boeuf aux herbes</p>
-                        <div class="description_prix">
-                            <p>Accompagné de sa ribambelle de légumes</p>
-                            <p>40€</p>
+                        <div class="plats_description">
+                            <span>Accompagné de sa ribambelle de légumes</span>
+                            <span class="prix">40€</p>
                         </div>
-                    </div>
-                </div>
+                    </a>
 
-                <div class="plats_liste">
-                    <div class="plat">
+                    <a href="#" class="plats_bloc">
                         <p>Parmentier de queue de boeuf</p>
-                        <div class="description_prix">
-                            <p>À la truffe noire sur sa purée de panais</p>
-                            <p>35€</p>
+                        <div class="plats_description">
+                            <span>À la truffe noire sur sa purée de panais</span>
+                            <span class="prix">35€</p>
                         </div>
-                    </div>
-                </div>
+                    </a>
 
-                <div class="plats_liste">
-                    <div class="plat">
+                    <a href="#" class="plats_bloc">
                         <p>Filet de turbot</p>
-                        <div class="description_prix">
-                            <p>Aux agrumes</p>
-                            <p>44€</p>
+                        <div class="plats_description">
+                            <span>Aux agrumes</span>
+                            <span class="prix">44€</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
-                <h2>Desserts</h2>
+                <h2>DESSERTS</h2>
 
-                <div class="plats_liste">
-                    <div class="plat">
+                <div class="desserts">
+
+                    <a href="#" class="desserts_bloc">
                         <p>Paris-Brest</p>
-                        <div class="description_prix">
-                            <p>Revisité</p>
-                            <p>18€</p>
+                        <div class="desserts_description">
+                            <span>Revisité</span>
+                            <span class="prix">18€</p>
                         </div>
-                    </div>
-                </div>
+                    </a>
 
-                <div class="plats_liste">
-                    <div class="plat">
+                    <a href="#" class="desserts_bloc">
                         <p>Macaron au chocolat d'exception </p>
-                        <div class="description_prix">
-                            <p>Et glace à la vanille de Madagascar</p>
-                            <p>22€</p>
+                        <div class="desserts_description">
+                            <span>Et glace à la vanille de Madagascar</span>
+                            <span class="prix">22€</p>
                         </div>
-                    </div>
-                </div>
+                    </a>
 
-                <div class="plats_liste">
-                    <div class="plat">
+                    <a href="#" class="desserts_bloc">
                         <p>Mousse au chocolat </p>
-                        <div class="description_prix">
-                            <p>Au piment d'Espelette et à la truffe noire</p>
-                            <p>23€</p>
+                        <div class="desserts_description">
+                            <span>Au piment d'Espelette et à la truffe noire</span>
+                            <span class="prix">23€</span>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
-                <button>Commander</button>
+                <div id="btn">
+                    <button>Commander</button>
+                </div>
+                
             </div>
         </section>
 
         <!-- Footer -->
 
         <footer>
-            <h3>ohmyfood</h3>
+            <h4>ohmyfood</h4>
 
                 <ul>
                     <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
