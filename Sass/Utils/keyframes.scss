@@ -1,0 +1,122 @@
+@import "variables.scss";
+
+@keyframes flou {
+    0% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes utensils {
+    0% {
+        transform: rotate(0deg);
+        color: $color-primary;
+    }
+
+    70% {
+        transform: rotate(360deg);
+    }
+    
+    100% {
+        color: $color-secondary;
+        transform: scale(5);
+    }
+}
+
+@keyframes loading-text {
+    0% {
+        visibility: visible;
+        color: $color-secondary;
+    }
+
+    100% {
+        color: $color-primary;
+        transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+}
+
+@keyframes loading {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes progress {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes progress_2 {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes coeur {
+    0% {
+        transform: scale(0);
+        
+    }
+
+    100% {
+        
+        transform: scale(1);
+    }
+}
+
+@keyframes check {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 80px;
+    }
+}
+
+@keyframes check--2 {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 30px;
+    }
+}
+
+@keyframes check-i {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+       transform: rotate(360deg);
+    }
+}

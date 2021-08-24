@@ -2,10 +2,10 @@
 
 <html lang="fr">
 	<head>
-		<title></title>
+		<title>À la française</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" type="text/css" href="menu_3.css">
+		<link rel="stylesheet" type="text/css" href="Sass/Pages/menu.css">
         <script src="https://kit.fontawesome.com/976e89b6e5.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,126 +19,166 @@
 
         <header>
             <div>
-                <i class="fas fa-arrow-left"></i>
-                <img src="images/logo/ohmyfood@2x.svg">
-                <img src="images/restaurants/francaise.jpg">
+                <a href="../"><i class="fas fa-arrow-left back"></i></a>
+                <img src="images/logo/ohmyfood@2x.svg" id="logo" alt="logo du site">
             </div>
+            <img src="images/restaurants/palette_du_gout.jpg" id="header_img" alt="photo d'un plat du restaurant à la française">
         </header>
 
-       <!-- Section "Carte du restaurant" -->
+        <!-- Section "Carte du restaurant" -->
 
         <section>
-            <h1>À la française<i class="far fa-heart"></i><i class="fas fa-heart"></i></h1>
-            <h2>Entrées</h2>
+            <div id="section_container">
+                <div class="section_title">
+                    <h1>À la française</h1>
+                    <div class="heart">
+                        <i class="far fa-heart empty"></i>
+                        <i class="fas fa-heart full"></i>
+                    </div>
+                </div>
+        
+                <h2>ENTRÉES</h2>
 
-            <div class="plats_liste">
-                <div class="plat">
-                <p>Tartare de poulpe acidulé</p>
-                <div class="description_prix">
-                    <p>Aux zestes d'orange</p>
-                    <p>25€</p>
+                <div class ="entrees">
+
+                    <a href="#" class="entrees_bloc">
+                        <h3>Tartare de poulpe acidulé</h3>
+                        <div class="entrees_description">
+                            <span>Aux zestes d'orange</span>
+                            <span class="prix">25€</span>
+                        </div>
+                        
+                        <div class="check_animation">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        
+                    </a>
+
+                    <a href="#" class="entrees_bloc">
+                        <h3>Velouté de légumes d'antan</h3>
+                        <div class="entrees_description">
+                            <span>Carotte, panais, topinambour</span>
+                            <span class="prix">35€</span>
+                        </div>
+
+                        <div class="check_animation">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </a>
+                
+                    <a href="#" class="entrees_bloc">
+                        <h3>Soupe à l'oignon</h3>
+                        <div class="entrees_description">
+                            <span>Revisitée</span>
+                            <span class="prix">20€</span>
+                        </div>
+
+                        <div class="check_animation">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </a>
+
+                </div> 
+               
+                <h2>PLATS</h2>
+
+                <div class="plats">
+
+                    <a href="#" class="plats_bloc">
+                        <h3>Coquilles Saint-Jacques</h3>
+                        <div class="plats_description">
+                            <span>Accompagnées d'une purée de panais</span>
+                            <span class="prix">40€</span>
+                        </div>
+
+                        <div class="check_animation">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </a>
+
+                    <a href="#" class="plats_bloc">
+                        <h3>Magret de canard</h3>
+                        <div class="plats_description">
+                            <span>Et parmentier de pommes de terre</span>
+                            <span class="prix">35€</span>
+                        </div>
+
+                        <div class="check_animation">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </a>
+
+                    <a href="#" class="plats_bloc">
+                        <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                        <div class="plats_description">
+                            <span>Sur son lit de gnocchis aux légumes</span>
+                            <span class="prix">44€</span>
+                        </div>
+
+                        <div class="check_animation">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </a>
                 </div>
+
+                <h2>DESSERTS</h2>
+
+                <div class="desserts">
+
+                    <a href="#" class="desserts_bloc">
+                        <h3>Pétales de violettes glacés</h3>
+                        <div class="desserts_description">
+                            <span>Et purée de noisettes</span>
+                            <span class="prix">18€</span>
+                        </div>
+
+                        <div class="check_animation">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </a>
+
+                    <a href="#" class="desserts_bloc">
+                        <h3>Fondant au chocolat</h3>
+                        <div class="desserts_description">
+                            <span>Revisité</span>
+                            <span class="prix">22€</span>
+                        </div>
+
+                        <div class="check_animation">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </a>
+
+                    <a href="#" class="desserts_bloc">
+                        <h3>Millefeuille croustillant</h3>
+                        <div class="desserts_description">
+                            <span>Myrtilles et pâte d’amande</span>
+                            <span class="prix">23€</span>
+                        </div>
+
+                        <div class="check_animation">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </a>
                 </div>
+
+                <div id="btn">
+                    <button>Commander</button>
+                </div>
+
             </div>
 
-            <div class="plats_liste">
-                <div class="plat">
-                <p>Velouté de légumes d'antan</p>
-                <div class="description_prix">
-                    <p>Carotte, panais, topinambour</p>
-                    <p>35€</p>
-                </div>
-                </div>
-            </div>
-
-            <div class="plats_liste">
-                <div class="plat">
-                <p>Soupe à l'oignon</p>
-                <div class="description_prix">
-                    <p>Revisitée</p>
-                    <p>20€</p>
-                </div>
-                </div>
-            </div>
-            
-            <h2>Plats</h2>
-
-            <div class="plats_liste">
-                <div class="plat">
-                <p>Coquilles Saint-Jacques</p>
-                <div class="description_prix">
-                    <p>Accompagnées d'une purée de panais</p>
-                    <p>40€</p>
-                </div>
-                </div>
-            </div>
-
-            <div class="plats_liste">
-                <div class="plat">
-                <p>Magret de canard</p>
-                <div class="description_prix">
-                    <p>Et parmentier de pommes de terre</p>
-                    <p>35€</p>
-                </div>
-                </div>
-            </div>
-
-            <div class="plats_liste">
-                <div class="plat">
-                <p>Pigeonneau d’Ille-et-Vilaine</p>
-                <div class="description_prix">
-                    <p>Sur son lit de gnocchis aux légumes</p>
-                    <p>44€</p>
-                </div>
-                </div>
-            </div>
-
-            <h2>Desserts</h2>
-
-            <div class="plats_liste">
-                <div class="plat">
-                <p>Pétales de violettes glacés</p>
-                <div class="description_prix">
-                    <p>Et purée de noisettes</p>
-                    <p>18€</p>
-                </div>
-                </div>
-            </div>
-
-            <div class="plats_liste">
-                <div class="plat">
-                <p>Fondant au chocolat</p>
-                <div class="description_prix">
-                    <p>Revisité</p>
-                    <p>22€</p>
-                </div>
-                </div>
-            </div>
-
-            <div class="plats_liste">
-                <div class="plat">
-                <p>Millefeuille croustillant</p>
-                <div class="description_prix">
-                    <p>Myrtilles et pâte d’amande</p>
-                    <p>23€</p>
-                </div>
-                </div>
-            </div>
-
-            <button>Commander</button>
         </section>
 
         <!-- Footer -->
 
         <footer>
-            <div id="logo_footer">
-                <img src="images/logo/ohmyfood@2x.svg">
-                </div>
+            <h4>ohmyfood</h4>
 
                 <ul>
                     <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
                     <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
-                    <li><a href="#">légales</a></li>
+                    <li><a href="#">Mentions légales</a></li>
                     <li><a href="mailto:">Contact</a></li>
                 </ul>
         </footer>
