@@ -66,7 +66,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+        position: relative;
 
         h1 {
             margin-left: 15px;
@@ -88,6 +88,7 @@ header {
                 background: -webkit-linear-gradient($color-primary, $color-secondary);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+                transform: scale(1);
                 animation: coeur 1s;
             }
 
@@ -144,6 +145,7 @@ header {
                 max-width: 100%;
             }
 
+            
             .prix {
                 font-weight: bold;
                 margin-right: 15px;               

@@ -302,6 +302,7 @@ header #header_img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 #section_container .section_title h1 {
@@ -325,6 +326,8 @@ header #header_img {
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-transform: scale(1);
+          transform: scale(1);
   -webkit-animation: coeur 1s;
           animation: coeur 1s;
 }
